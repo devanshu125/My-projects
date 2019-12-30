@@ -44,7 +44,7 @@ void main()
 	cout << "5.Display\n";
 	cout << "6.Exit\n";
 	cout << "Choice please\n";
-	cin >> ch;
+	cin >> ch; //The choice entered by the user is stored in ch
 	switch (ch)
 	{
 	     case '1': //append
@@ -91,6 +91,7 @@ void main()
 			}
 			f3.close();
 			break;
+			
 		case '4': //delete
 			ofstream f1; 
 			ifstream f2; 
@@ -110,19 +111,22 @@ void main()
 			f1.close();
 			f2.close();
 			break;
-				case '5': //display
-		    ifstream f5;     
-				f5.open("course.dat", ios::in | ios::binary);
-				f5.seekg(0, ios::beg);
-				while (f5.read((char *)&s, sizeof(s)))
-		    {
-			s.show_details();   
-		    }
-				f5.close();
-				break;
+			
+		case '5': //display
+		    	  ifstream f5;     
+		 	  f5.open("course.dat", ios::in | ios::binary);
+			  f5.seekg(0, ios::beg);
+			  while (f5.read((char *)&s, sizeof(s)))
+		    	  {
+			      s.show_details();   
+		    	  }
+		 	  f5.close();
+			  break;
+		
 		case '6': //exit
 			exit(0);
 			break;
+			
 		}
 		cout << "Do you want to continue???\n";
 		cout << "If yes then press y else press n\n";
