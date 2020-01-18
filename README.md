@@ -1,2 +1,8 @@
 # University Course Manager
-The file C++_project includes a project which I made during High School. It's based on the concept of Data File Handling. A course manager which gives the user, features like entering course details, searching for a course entered, modifying course details, deleting existing details, append new details and display them.
+
+This is a project based on handling a student's university courses data efficiently. I have used the concept of Data File Handling in C++ to make this project. The features of this project are:
+- Add one or more courses to the course list that is append.
+- Modifying the course details of a course already entered by the student.
+- Searching a specific course's details entered by the student.
+- Deleting a course entered by the user.
+- Displaying all the courses entered by the student.
